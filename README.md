@@ -24,3 +24,9 @@ cut uses a delimiter and a field value, I cut at the first of 2 ']' and select f
 Here is the line of log I used to create this script:
 
 Wed Sep xx xx:xx:xx 2020 daemon.notice openvpn(CAMontreal)[28884]: UDP link remote: [AF_INET]xxx.xxx.xxx.xxx:XXXX
+
+This was designed using openvpn and ddns on openWRT to solve an issue of revolving IP address from daily VPN changes for a game server. 
+hostname:port is now used and ddns updates itself with the new VPN address everytime it changes.
+
+Future Plans:
+Integrate Port Forwarding for service WAN access on a dynamic VPN, or determine that should be solely in openvpn setup and ignore
